@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.maskSpinner {
+  position: fixed;
+  z-index: 999;
+  height: 200px;
+  width: 100px;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

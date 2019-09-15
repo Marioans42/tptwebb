@@ -1,0 +1,77 @@
+<section class="bg-image bg-image-sm" style="background-image: url('assets/img/gallery/bg.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-4 mx-auto">
+        <div class="card m-b-0">
+          <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-sign-in"></i> Login to your account</h4>
+          </div>
+          <div class="card-block">
+            <form action="profile.html">
+ <!--              <a class="btn btn-social btn-facebook btn-block btn-icon-left" href="" role="button"><i class="fa fa-facebook"></i> Connect with Facebook</a>
+              <div class="divider">
+                <span>or</span>
+              </div> -->
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-user"></i>
+                <input type="email" name="name" class="form-control form-control-secondary" placeholder="Username" [(ngModel)] = "user.name"
+                #name="ngModel">
+              </div>
+              <div class="form-group input-icon-left m-b-15">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" class="form-control form-control-secondary" placeholder="Password"  [(ngModel)] = "user.password"
+                #password="ngModel">
+              </div>
+              <!-- <label class="custom-control custom-checkbox custom-checkbox-primary">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Remember me</span>
+            </label> -->
+              <button type="submit" class="btn btn-primary btn-block m-t-10" (click)="auth(user)">Login <i class="fa fa-sign-in"></i></button>
+              <!-- <div class="divider">
+                <span>Don't have an account?</span>
+              </div> -->
+              <a class="btn btn-secondary btn-block" href="register.html" role="button">Register</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <h4 class="footer-title">A propos</h4>
+        « SharinGame » est un projet répondant à la plupart des besoins sur le plan divertissement et sur le plan compétence. Il contient à la fois un client lourd, une application mobile et une partie web. Il n’existe pas actuellement d’application ou de projet mettant en avant les compétences ainsi que le travail réalisé par un individu. Ainsi, on aura l’avantage de permettre aux usagers de jouer à différents jeux mais également de pouvoir se faire remarquer par les grandes entreprises.
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <h4 class="footer-title">Platform</h4>
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li><a href="#">Playstation 4</a></li>
+              <li><a href="#">Xbox One</a></li>
+              <li><a href="#">PC</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iOS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="" target="_blank" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="" target="_blank" data-toggle="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="" target="_blank" data-toggle="tooltip" title="twitch"><i class="fa fa-twitch"></i></a>
+        <a href="" target="_blank" data-toggle="tooltip" title="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+      <p>Copyright &copy; 2019 <a href="https://themeforest.net/item/gameforest-responsive-gaming-html-theme/5007730" target="_blank">Sharingame</a>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

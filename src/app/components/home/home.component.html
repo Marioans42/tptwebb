@@ -1,0 +1,148 @@
+
+  <section class="p-y-80">
+    <div class="container">
+      <div class="heading">
+        <h2>Jeux Récents</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4" *ngFor="let game of games">
+          <div class="card card-lg" >
+            <div class="card-img">
+              <a (click)="goTo(game.id)"><img src="assets/img/game/game-1.jpg" class="card-img-top" alt="Assassin's Creed Syndicate"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">{{game.title}}</h4>
+              <div class="card-meta"><span></span></div>
+              <p class="card-text">{{game.description}}</p>
+            </div>
+          </div>
+        </div>
+<!--         <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/8.jpg" class="card-img-top" alt="Rise of the Tomb Raider"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Devil May Cry 5</a></h4>
+              <div class="card-meta"><span>8 mars 2019</span></div>
+              <p class="card-text"> Le jeu est le cinquième volet canonique de la série Devil May Cry, onze ans après la parution de l'opus précédent, Devil May Cry 4.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/9.jpg" class="card-img-top" alt="The Witcher 3: Wild Hunt"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Fifa 19</a></h4>
+              <div class="card-meta"><span>28 septembre 2018</span></div>
+              <p class="card-text">FIFA 19 est un jeu vidéo de football développé par EA Canada et EA Bucarest, édité par EA Sports.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/10.jpg" class="card-img-top" alt="Grand Theft Auto V"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Assassin's Creed Odyssey</a></h4>
+              <div class="card-meta"><span>5 octobre 2018</span></div>
+              <p class="card-text">Assassin's Creed Odyssey est un jeu vidéo d'action-aventure et de rôle, développé par Ubisoft Québec et édité par Ubisoft sur PC, PlayStation 4 et Xbox One.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/11.jpg" class="card-img-top" height="203"></a>
+              <div class="badge badge-xbox-one">Android</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">SuperMeat Boy</a></h4>
+              <div class="card-meta"><span>8 avril 2018</span></div>
+              <p class="card-text">Super Meat Boy est un jeu vidéo indépendant conçu par Edmund McMillen et Tommy Refenes, qui forment ensemble le studio de développement Team Meat</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/12.jpg" class="card-img-top" height="203"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Fortinite</a></h4>
+              <div class="card-meta"><span>21 juillet 2017</span></div>
+              <p class="card-text">Fortnite est un jeu en ligne développé par Epic Games et qui a été publié sous la forme de différents progiciels proposant différents modes de jeu.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="text-center"><a class="btn btn-primary btn-shadow btn-rounded btn-effect btn-lg m-t-10" href="games.html">Voir Plus</a></div>
+    </div>
+  </section>
+
+  <section class="bg-image" style="background-image: url(https://img.youtube.com/vi/IsDX_LiJT7E/maxresdefault.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="video-play" data-src="https://www.youtube.com/embed/IsDX_LiJT7E?rel=0&amp;amp;autoplay=1&amp;amp;showinfo=0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img class="embed-responsive-item" src="https://img.youtube.com/vi/IsDX_LiJT7E/maxresdefault.jpg" alt="">
+          <div class="video-play-icon">
+            <i class="fa fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- /main -->
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <h4 class="footer-title">A propos</h4>
+          « SharinGame » est un projet répondant à la plupart des besoins sur le plan divertissement et sur le plan compétence. Il contient à la fois un client lourd, une application mobile et une partie web. Il n’existe pas actuellement d’application ou de projet mettant en avant les compétences ainsi que le travail réalisé par un individu. Ainsi, on aura l’avantage de permettre aux usagers de jouer à différents jeux mais également de pouvoir se faire remarquer par les grandes entreprises.
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <h4 class="footer-title">Platform</h4>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a href="#">Playstation 4</a></li>
+                <li><a href="#">Xbox One</a></li>
+                <li><a href="#">PC</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">iOS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="" target="_blank" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="twitch"><i class="fa fa-twitch"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>Copyright &copy; 2019 <a href="https://themeforest.net/item/gameforest-responsive-gaming-html-theme/5007730" target="_blank">Sharingame</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+  <div class="maskSpinner" *ngIf="isLoading">
+      <app-radar-spinner [animationDuration]="4000" [size]="200" [color]="'silver'"></app-radar-spinner>
+</div>
+
+

@@ -1,0 +1,101 @@
+<section class="bg-image bg-image-sm" style="background-image: url('https://img.youtube.com/vi/BhTkoDVgF6s/maxresdefault.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-4 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-user-plus"></i> Créer un nouveau compte</h4>
+          </div>
+          <div class="card-block">
+            <form action="profile.html">
+              <!-- <a class="btn btn-social btn-google-plus btn-block btn-icon-left" href="" role="button"><i class="fa fa-google-plus"></i> Register with Google Plus</a>
+              <div class="divider"><span>or</span></div> -->
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control form-control-secondary" placeholder="Name" name="name" [(ngModel)] = "user.name"
+                #name="ngModel">
+              </div>
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control form-control-secondary" placeholder="LastName" name="lastname" [(ngModel)] = "user.lastname"
+                #name="ngModel">
+              </div>
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control form-control-secondary" placeholder="Username" name="username" [(ngModel)] = "user.username"
+                #name="ngModel">
+              </div>
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="form-control form-control-secondary" placeholder="Email Address" name="email" [(ngModel)] = "user.email"
+                #name="ngModel">
+              </div>
+             <!--  <div class="divider"><span>Security</span></div> -->
+              <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control form-control-secondary" placeholder="Password" name="password" [(ngModel)] = "user.password"
+                #name="ngModel">
+              </div>
+<!--               <div class="form-group input-icon-left m-b-10">
+                <i class="fa fa-unlock"></i>
+                <input type="password" class="form-control form-control-secondary" placeholder="Repeat Password">
+              </div> -->
+              <!-- <div class="divider"><span>I am not a robot</span></div> -->
+<!--               <div class="g-recaptcha-outer">
+                <script src='https://www.google.com/recaptcha/api.js'></script>
+                <div class="g-recaptcha" data-sitekey="6LeBwhwUAAAAAG1RDj-rS2Wu4WYNoV021q0z-LNY"></div>
+              </div> -->
+<!--               <div class="divider"><span>Terms of Service</span></div>
+              <label class="custom-control custom-checkbox custom-checkbox-primary custom-checked">
+              <input type="checkbox" class="custom-control-input" checked="">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Subscribe to monthly newsletter</span>
+            </label> -->
+<!--               <label class="custom-control custom-checkbox custom-checkbox-primary">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Accept <a href="#" data-toggle="modal" data-target="#terms">terms of service</a></span>
+            </label> -->
+              <button type="submit" class="btn btn-primary m-t-10 btn-block" (click)="register(user)">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <h4 class="footer-title">A propos</h4>
+          « SharinGame » est un projet répondant à la plupart des besoins sur le plan divertissement et sur le plan compétence. Il contient à la fois un client lourd, une application mobile et une partie web. Il n’existe pas actuellement d’application ou de projet mettant en avant les compétences ainsi que le travail réalisé par un individu. Ainsi, on aura l’avantage de permettre aux usagers de jouer à différents jeux mais également de pouvoir se faire remarquer par les grandes entreprises.
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <h4 class="footer-title">Platform</h4>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a href="#">Playstation 4</a></li>
+                <li><a href="#">Xbox One</a></li>
+                <li><a href="#">PC</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">iOS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="" target="_blank" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="twitch"><i class="fa fa-twitch"></i></a>
+          <a href="" target="_blank" data-toggle="tooltip" title="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>Copyright &copy; 2019 <a href="https://themeforest.net/item/gameforest-responsive-gaming-html-theme/5007730" target="_blank">Sharingame</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>

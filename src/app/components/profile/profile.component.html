@@ -1,0 +1,179 @@
+<section class="hero hero-profile" style="background-image: url('https://img.youtube.com/vi/D3pYbbA1kfk/maxresdefault.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="hero-block">
+      <h5>Nathan Drake</h5>
+      <!-- <a class="btn btn-primary btn-sm btn-shadow btn-rounded btn-icon btn-add" href="#" data-toggle="tooltip" title="Add friend" role="button"><i class="fa fa-user-plus"></i></a> -->
+    </div>
+  </div>
+</section>
+
+<section class="toolbar toolbar-profile" data-fixed="true">
+  <div class="container">
+    <div class="profile-avatar">
+
+      <a href="#"><img src="assets/img/user/avatar.jpg" alt=""></a>
+      <div class="sticky">
+        <a href="#"><img src="assets/img/user/avatar.jpg" alt=""></a>
+        <div class="profile-info">
+          <h5>{{logged}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-y-80">
+    <div class="container">
+      <div class="heading">
+        <h2>Mes Jeux</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4" *ngFor="let game of gameslist">
+          <div class="card card-lg" >
+            <div class="card-img">
+              <a (click)="goTo(game.id)"><img src="assets/img/game/game-1.jpg" class="card-img-top" alt="Assassin's Creed Syndicate"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">{{game.title}}</h4>
+              <div class="card-meta"><span></span></div>
+              <p class="card-text">{{game.description}}</p>
+            </div>
+          </div>
+        </div>
+<!--         <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/8.jpg" class="card-img-top" alt="Rise of the Tomb Raider"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Devil May Cry 5</a></h4>
+              <div class="card-meta"><span>8 mars 2019</span></div>
+              <p class="card-text"> Le jeu est le cinquième volet canonique de la série Devil May Cry, onze ans après la parution de l'opus précédent, Devil May Cry 4.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/9.jpg" class="card-img-top" alt="The Witcher 3: Wild Hunt"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Fifa 19</a></h4>
+              <div class="card-meta"><span>28 septembre 2018</span></div>
+              <p class="card-text">FIFA 19 est un jeu vidéo de football développé par EA Canada et EA Bucarest, édité par EA Sports.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/10.jpg" class="card-img-top" alt="Grand Theft Auto V"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Assassin's Creed Odyssey</a></h4>
+              <div class="card-meta"><span>5 octobre 2018</span></div>
+              <p class="card-text">Assassin's Creed Odyssey est un jeu vidéo d'action-aventure et de rôle, développé par Ubisoft Québec et édité par Ubisoft sur PC, PlayStation 4 et Xbox One.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/11.jpg" class="card-img-top" height="203"></a>
+              <div class="badge badge-xbox-one">Android</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">SuperMeat Boy</a></h4>
+              <div class="card-meta"><span>8 avril 2018</span></div>
+              <p class="card-text">Super Meat Boy est un jeu vidéo indépendant conçu par Edmund McMillen et Tommy Refenes, qui forment ensemble le studio de développement Team Meat</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+            <div class="card-img">
+              <a href="game-post.html"><img src="assets/img/game/12.jpg" class="card-img-top" height="203"></a>
+              <div class="badge badge-ps4">Multi</div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-title"><a href="game-post.html">Fortinite</a></h4>
+              <div class="card-meta"><span>21 juillet 2017</span></div>
+              <p class="card-text">Fortnite est un jeu en ligne développé par Epic Games et qui a été publié sous la forme de différents progiciels proposant différents modes de jeu.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="text-center"><a class="btn btn-primary btn-shadow btn-rounded btn-effect btn-lg m-t-10" href="games.html">Voir Plus</a></div> -->
+    </div>
+  </section>
+
+
+  <section class="p-y-80">
+    <div class="container">
+      <div class="row m-t-80">
+          <div class="col-lg-6">
+            <div class="p-r-30">
+              <h5>Ajouter jeu</h5>
+              <form>
+                <div class="form-group row">
+                  <label for="example-text-input" class="col-sm-2 col-form-label">Titre</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" id="example-text-input" name="title" [(ngModel)] = "game.title"
+                    #name="ngModel">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleTextarea2" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="exampleTextarea2" rows="6" name="description" [(ngModel)] = "game.description"
+                      #name="ngModel"></textarea>
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label for="example-email-input" class="col-sm-2 col-form-label">Lien</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="email"  id="example-email-input" name="title" [(ngModel)] = "game.link"
+                    #name="ngModel">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputFile2" class="col-sm-2 control-label">Technologies</label>
+                    <div class="col-sm-10">
+                      <div class="form-check" *ngFor="let item of techno">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        {{item.label}}
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="exampleInputFile2" class="col-sm-2 control-label">Platformes</label>
+                      <div class="col-sm-10">
+                        <div class="form-check" *ngFor="let item of platform">
+                          <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input">
+                          {{item.label}}
+                        </label>
+                        </div>
+                      </div>
+                    </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Upload</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  </div>
+                  <button type="submit" class="btn btn-primary" (click)="save(game)">Submit</button>
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+    </div>
+  </section>
