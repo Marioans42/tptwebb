@@ -6,8 +6,11 @@ export class Game {
   title: string;
   description: string;
   releaseDate: string;
+  image: string;
   link: string;
-  Technologies: Technology;
-  Platforms: Platform;
+  UsersID: string;
+  technologies: any [];
+  platforms: any [];
+  tags: any [];
 
 }

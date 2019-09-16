@@ -138,7 +138,7 @@
                 <div class="form-group row">
                   <label for="example-email-input" class="col-sm-2 col-form-label">Lien</label>
                   <div class="col-sm-10">
-                    <input class="form-control" type="email"  id="example-email-input" name="title" [(ngModel)] = "game.link"
+                    <input class="form-control" type="email"  id="example-email-input" name="title" [(ngModel)] = "game.image"
                     #name="ngModel">
                   </div>
                 </div>
@@ -147,23 +147,37 @@
                     <div class="col-sm-10">
                       <div class="form-check" *ngFor="let item of techno">
                         <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
+                          <input type="checkbox" class="form-check-input" (change)="addCheckboxesTechnos(item.id)">
                         {{item.label}}
                       </label>
                       </div>
                     </div>
                   </div>
+
                   <div class="form-group row">
                       <label for="exampleInputFile2" class="col-sm-2 control-label">Platformes</label>
                       <div class="col-sm-10">
                         <div class="form-check" *ngFor="let item of platform">
                           <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input">
+                            <input type="checkbox" class="form-check-input" (change)="addCheckboxesPlatfomrs(item.id)">
                           {{item.label}}
                         </label>
                         </div>
                       </div>
                     </div>
+
+                    <div class="form-group row">
+                      <label for="exampleInputFile2" class="col-sm-2 control-label">Tags</label>
+                      <div class="col-sm-10">
+                        <div class="form-check" *ngFor="let item of tag; let i = index">
+                          <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" (change)="addCheckboxesTags(item.id)">
+                          {{item.label}}
+                        </label>
+                        </div>
+                      </div>
+                    </div>
+
                 <div class="form-group">
                     <label for="exampleInputFile">Upload</label>
                     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">

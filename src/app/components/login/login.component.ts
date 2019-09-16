@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
     this.isLoading = true;
     this.dataService.post("https://server-tptm2.herokuapp.com/api/user/auth/signin", user).subscribe((log) => {
        if (log) {
+         console.log("log", log)
          LoginComponent.updateLocalStorage(log);
          this.router.navigate(['/home']);
          this.isLoading = false;
