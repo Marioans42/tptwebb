@@ -2,7 +2,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="hero-block">
-      <h5>Nathan Drake</h5>
+      <h5>{{logged}}</h5>
       <!-- <a class="btn btn-primary btn-sm btn-shadow btn-rounded btn-icon btn-add" href="#" data-toggle="tooltip" title="Add friend" role="button"><i class="fa fa-user-plus"></i></a> -->
     </div>
   </div>
@@ -12,9 +12,9 @@
   <div class="container">
     <div class="profile-avatar">
 
-      <a href="#"><img src="assets/img/user/avatar.jpg" alt=""></a>
+      <a href="#"><img src="assets/img/user/user.png" alt=""></a>
       <div class="sticky">
-        <a href="#"><img src="assets/img/user/avatar.jpg" alt=""></a>
+        <a href="#"><img src="assets/img/user/user.png" alt=""></a>
         <div class="profile-info">
           <h5>{{logged}}</h5>
         </div>
@@ -32,7 +32,8 @@
         <div class="col-12 col-sm-6 col-md-4" *ngFor="let game of gameslist">
           <div class="card card-lg" >
             <div class="card-img">
-              <a (click)="goTo(game.id)"><img src="assets/img/game/game-1.jpg" class="card-img-top" alt="Assassin's Creed Syndicate"></a>
+                <img *ngIf="game.images[0]" src="assets/img/game/{{game.images[0]?.picture}}" class="card-img-top" alt="Assassin's Creed Syndicate">
+                <img *ngIf="!game.images[0]" src="assets/img/game/roadAttack.PNG" class="card-img-top" alt="Assassin's Creed Syndicate">
               <div class="badge badge-ps4">Multi</div>
             </div>
             <div class="card-block">
@@ -113,7 +114,7 @@
   </section>
 
 
-  <section class="p-y-80">
+  <section class="p-y-80" style="margin-top: -185px">
     <div class="container">
       <div class="row m-t-80">
           <div class="col-lg-6">

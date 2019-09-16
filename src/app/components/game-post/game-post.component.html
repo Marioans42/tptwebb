@@ -21,6 +21,7 @@
           <span>Users</span>
           <a href="review-post.html">9.1</a>
         </div> -->
+        
       </div>
     </div>
   </div>
@@ -104,6 +105,32 @@
             <span class="badge badge-danger">Blog</span>
           </div> -->
           <p>{{game.description}}</p>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <div>
+              <a href="profile.html">
+              <img src="img/user/user-1.jpg" alt="">
+            </a>
+            </div>
+<!--             <div>
+              <h2 class="post-title">
+                <a href="blog-post.html">The Witcher 3: Don't Miss This Hidden Contract in Blood and Wine</a>
+              </h2>
+              <div class="post-meta">
+                <span><i class="fa fa-clock-o"></i> Julye 28, 2017 by <a href="profile.html">Venom</a></span>
+                <span><a href="#">PS4</a>, <a href="#">Xbox One</a></span>
+                <span><a href="blog-post.html#comments"><i class="fa fa-comment-o"></i> 98 comments</a></span>
+              </div>
+            </div> -->
+          </div>
+<!--           <div class="post-thumbnail">
+            <img src="img/game/post-1.jpg" alt="The Witcher 3: Don't Miss This Hidden Contract in Blood and Wine">
+            <span class="badge badge-danger">Blog</span>
+          </div> -->
+          <img *ngIf="game.images[0]" src="assets/img/game/{{game.images[0]?.picture}}" class="card-img-top" alt="Assassin's Creed Syndicate">
+                <img *ngIf="!game.images[0]" src="assets/img/game/roadAttack.PNG" class="card-img-top" alt="Assassin's Creed Syndicate">
         </div>
 
         <!-- post -->
@@ -235,20 +262,26 @@
               <div class="overlay"></div>
               <div class="widget-item">
                 <h4>{{game.title}}</h4>
-                <span class="meta">{{game.releaseDate}}</span>
+                <span class="meta"></span>
 
                 <h5>Platforms</h5>
                 <div *ngFor="let item of game.Platforms">
                 <a href="#"><span class="badge badge-xbox-one">{{item.label}}</span></a>&nbsp;&nbsp;&nbsp;
                 </div>
-                <h5>Developed</h5>
-                <ul>
-                  <li><a href="#">{{game.User.name}}</a></li>
-                </ul>
+
+                <h5>Technologies</h5>
+                <div *ngFor="let item of game.Technologies">
+                <a href="#"><span class="badge badge-xbox-one">{{item.label}}</span></a>&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <h5>Tags</h5>
+                <div *ngFor="let item of game.Technologies">
+                <a href="#"><span class="badge badge-xbox-one">{{item.label}}</span></a>&nbsp;&nbsp;&nbsp;
+                </div>
 
                 <h5>Published</h5>
                 <ul>
-                  <li><a href="#">{{game.User.name}}</a></li>
+                  <li><a href="#">{{game.releaseDate | date : "dd.MM.yyyy"}}</a></li>
                 </ul>
                 <!-- <p>The Witcher 3: Wild Hunt is a story-driven, next-generation open world role-playing game, set in a visually stunning fantasy universe, full of meaningful choices and impactful consequences.</p>
                 <button type="submit" class="btn btn-outline-default btn-block">Follow Now <i class="fa fa-heart-o"></i></button> -->

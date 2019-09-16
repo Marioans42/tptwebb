@@ -8,7 +8,10 @@
         <div class="col-12 col-sm-6 col-md-4" *ngFor="let game of games">
           <div class="card card-lg" >
             <div class="card-img">
-              <a (click)="goTo(game.id)"><img src="assets/img/game/game-1.jpg" class="card-img-top" alt="Assassin's Creed Syndicate"></a>
+              <a (click)="goTo(game.id)">
+                <img *ngIf="game.images[0]" src="assets/img/game/{{game.images[0]?.picture}}" class="card-img-top" alt="Assassin's Creed Syndicate">
+                <img *ngIf="!game.images[0]" src="assets/img/game/roadAttack.PNG" class="card-img-top" alt="Assassin's Creed Syndicate">
+              </a>
               <div class="badge badge-ps4">Multi</div>
             </div>
             <div class="card-block">
